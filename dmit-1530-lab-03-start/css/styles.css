@@ -23,6 +23,25 @@ body {
 h1 {
     font-size: 1.65rem;
     font-weight: normal;
+    align-self: center;
+}
+
+svg {
+    width: 25px;
+    height: 25px;
+}
+
+a {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    text-decoration: none;
+    margin: 2rem 0;
+    align-items: center;
+}
+
+a:hover {
+    color: var(--accent);
 }
 
 /* Header Styles */
@@ -34,5 +53,33 @@ header {
     padding: 0.5rem;
 }
 
+.notification {
+    color: white;
+    background-color: var(--rose-700);
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 1rem;
+    position: absolute;
+    left: 12px;
+    top: -6px;
+    padding-top: 3px;
+}
+
 /* Media Query */
 
+@media screen and (min-width: 1200px) {
+    .inner-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: flex;
+        gap: 2rem;
+    }
+}
